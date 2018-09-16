@@ -1,0 +1,15 @@
+def bubble(L):
+    flag=True
+    for i in range(len(L)-1,0,-1):
+        if flag:
+            flag=False
+            for j in range(i):
+                if L[j]>L[j+1]:
+                    L[j],L[j+1]=L[j+1],L[j]
+                    flag=True
+        else:
+            break
+
+    print(L)
+l1=[1,23,4343,4432,3]  
+bubble(l1)
